@@ -38,6 +38,8 @@ services:
       - PHP_MAX_INPUT_VARS=${PHP_MAX_INPUT_VARS:-1000}
       - MW_SITEMAP_SUBDIR
       - MW_SITEMAP_IDENTIFIER
+      - MW_JOB_RUNNER_PAUSE=60
+      - MW_JOB_TRANSCODER_PAUSE=300
     volumes:
       - ./extensions:/var/www/mediawiki/w/user-extensions
       - ./skins:/var/www/mediawiki/w/user-skins

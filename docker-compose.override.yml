@@ -16,4 +16,7 @@ services:
       ports:
       - "${PORT:-80}:80"
       - "${HTTPS_PORT:-443}:443"
-  #varnish:
+      profiles: ["dummy"] # disable caddy
+  varnish:
+      ports:
+      - "${PORT:-8080}:80"

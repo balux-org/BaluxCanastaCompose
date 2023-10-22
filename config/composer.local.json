@@ -4,7 +4,7 @@
 	"extra": {
 		"merge-plugin": {
 			"include": [
-                
+				"user-extensions/AWS/composer.json"
 			]
 		}
 	}
